@@ -1,0 +1,120 @@
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #13416e;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .hero {
+            background: url('https://images.pexels.com/photos/7567606/pexels-photo-7567606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .feature-box, .subscription-box, .agency-box, .copy-trade-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-box:hover, .subscription-box:hover, .agency-box:hover, .copy-trade-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cta-btn {
+                padding: 12px 20px;
+            }
+
+            .feature-box, .subscription-box, .agency-box, .copy-trade-box {
+                padding: 20px;
+            }
+        }
